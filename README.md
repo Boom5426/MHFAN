@@ -7,3 +7,14 @@ Cell localization in medical pathology image analysis is a challenging task due 
 
 ## Overview
 ![3](https://github.com/Boli-trainee/MHFAN-Model/assets/83391363/a2d6526a-4fce-4b46-850e-5b69a7f5a96a)
+
+## Dataset reference
+The data processing process refers to the paper:
+```
+@article{li2023exponential,
+  title={Exponential Distance Transform Maps for Cell Localization},
+  author={Li, Bo and Chen, Jie and Yi, Hang and Feng, Min and Yang, Yongquan and Bu, Hong},
+  year={2023},
+  publisher={TechRxiv}
+}
+```
