@@ -9,11 +9,18 @@ Cell localization in medical pathology image analysis is a challenging task due 
 ![3](https://github.com/Boli-trainee/MHFAN-Model/assets/83391363/a2d6526a-4fce-4b46-850e-5b69a7f5a96a)
 
 ## Dataset reference
-The CoNIC dataset [[paper]](https://arxiv.org/pdf/2111.14485.pdf) [[Homepage]](https://conic-challenge.grand-challenge.org/) is currently the largest dataset used for nucleus segmentation in histopathological images stained with Hematoxylin and Eosin. This dataset comprises 4981 samples, each with a resolution of $256 \times 256$ pixels, and each sample has two types of annotations: nucleus segmentation and classification. It stands as one of the most extensive datasets available, containing approximately 500,000 labeled cell nuclei. Consistent with the processing of the Seg_Data dataset, to adapt this dataset for cell localization tasks, we first transformed it into a localization dataset. Subsequently, we split the dataset into a training set, consisting of samples from [0, 4000], and a test set, consisting of samples from (4000, 4981], for validation purposes.
-
+The CoNIC dataset [[paper]](https://arxiv.org/pdf/2111.14485.pdf) [[Homepage]](https://conic-challenge.grand-challenge.org/) is currently the largest dataset used for nucleus segmentation in histopathological images stained with Hematoxylin and Eosin. This dataset comprises 4981 samples, each with a resolution of $256 \times 256$ pixels, and each sample has two types of annotations: nucleus segmentation and classification. It stands as one of the most extensive datasets available, containing approximately 500,000 labeled cell nuclei. To adapt this dataset for cell localization tasks, we first transformed it into a localization dataset. Subsequently, we split the dataset into a training set, consisting of samples from [0, 4000], and a test set, consisting of samples from (4000, 4981], for validation purposes. 
 
 ## Data processing
-The data processing process refers to the paper:
+'''
+python CoNIC_process.py
+'''
+
+### Processed dataset
+The processed dataset of CoNIC dataset can be found at [here](https://drive.google.com/drive/folders/1sQPfeg0sxFihFalPzBzn2HojRIbWi0ck?usp=drive_link)
+
+## References
+The data process refers to this paper:
 ```
 @article{li2023exponential,
   title={Exponential Distance Transform Maps for Cell Localization},
