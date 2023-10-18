@@ -1,5 +1,5 @@
 # MHFAN-Multi-scale-Hypergraph-based-Feature-Alignment-Network-for-Cell-Localization
-The code of paper: Multi-scale Hypergraph-based Feature Alignment Network for Cell Localization [https://www.techrxiv.org/articles/preprint/Multi-scale_Hypergraph-based_Feature_Alignment_Network_for_Cell_Localization/22680877]{paper}
+The code of paper: Multi-scale Hypergraph-based Feature Alignment Network for Cell Localization [paper link](https://www.techrxiv.org/articles/preprint/Multi-scale_Hypergraph-based_Feature_Alignment_Network_for_Cell_Localization/22680877)
 
 
 ## Abstruct
