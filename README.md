@@ -2,6 +2,7 @@
 The code of paper: Multi-scale Hypergraph-based Feature Alignment Network for Cell Localization  [[Paper link]](https://www.techrxiv.org/articles/preprint/Multi-scale_Hypergraph-based_Feature_Alignment_Network_for_Cell_Localization/22680877)
 
 
+
 ## Abstruct
 Cell localization in medical pathology image analysis is a challenging task due to the significant variation in cell shape, size and color shades. Existing localization methods continue to tackle these challenges separately, frequently facing complications where these difficulties intersect and adversely impact model performance. In this paper, these challenges are first reframed as issues of feature misalignment between cell images and location maps, which are then collectively addressed. Specifically, we propose a feature alignment model based on a multi-scale hypergraph attention network. The model considers local regions in the feature map as nodes and utilizes a learnable similarity metric to construct hypergraphs at various scales. We then utilize a hypergraph convolutional network to aggregate the features associated with the nodes and achieve feature alignment between the cell images and location maps. Furthermore, we introduce a stepwise adaptive fusion module to fuse features at different levels effectively and adaptively. The comprehensive experimental results demonstrate the effectiveness of our proposed multi-scale hypergraph attention module in addressing the issue of feature misalignment, and our model achieves state-of-the-art performance across various cell localization datasets.
 
