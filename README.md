@@ -46,7 +46,7 @@ Generate all datasets by this way.
 # Quickly test
 
 ```
-git clone https://github.com/dk-liang/FIDTM.git
+git clone https://github.com/Boli-trainee/MHFAN.git
 ```
 Download Dataset and Model  
 Generate FIDT map ground-truth  
