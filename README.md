@@ -8,11 +8,12 @@ This repository includes three papers about cell:
 
 
 ## Overview
-![avatar](./fig1.png)
+![avatar](./image/Overview.png)
 
 # Visualizations
-Compared with density map
-![avatar](./image/fidtmap.png)
+![avatar](./image/Vis0.png)
+
+![avatar](./image/Vis1.png)
 
 
 # Environment
