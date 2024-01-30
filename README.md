@@ -44,3 +44,15 @@ The data process refers to this paper:
   publisher={Elsevier}
 }
 ```
+
+```
+@article{li2024lite,
+  title={Lite-UNet: A lightweight and efficient network for cell localization},
+  author={Li, Bo and Zhang, Yong and Ren, Yunhan and Zhang, Chengyang and Yin, Baocai},
+  journal={Engineering Applications of Artificial Intelligence},
+  volume={129},
+  pages={107634},
+  year={2024},
+  publisher={Elsevier}
+}
+```
