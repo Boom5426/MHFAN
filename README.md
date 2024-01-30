@@ -1,11 +1,12 @@
 
-# Focal Inverse Distance Transform Map
-* An officical implementation of Focal Inverse Distance Transform Map. We propose a novel map named Focal Inverse Distance Transform (FIDT) map,  which can represent each head location information.
+# Cell Localization and Counting
 
-* Paper [Link](https://arxiv.org/abs/2102.07925)
+This repository includes three papers about cell:
+1) Exponential Distance Transform Maps for Cell Localization; [Paper](https://www.sciencedirect.com/science/article/pii/S0952197623018183#fig2)
+2) Multi-scale Hypergraph-based Feature Alignment Network for Cell Localization;  [Paper](https://www.sciencedirect.com/science/article/pii/S0031320324000116)
+3) Lite-UNet: A lightweight and efficient network for cell localization. [Paper](https://www.sciencedirect.com/science/article/pii/S0952197623018183#fig2)
 
-## News
-We now provide the predicted coordinates txt files, and other researchers can use them to fairly evaluate the localization performance.
+
 ## Overview
 ![avatar](./image/overview.png)
 
