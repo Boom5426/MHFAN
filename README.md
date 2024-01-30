@@ -1,5 +1,12 @@
 # MHFAN-Multi-scale-Hypergraph-based-Feature-Alignment-Network-for-Cell-Localization
-The code of paper: Multi-scale Hypergraph-based Feature Alignment Network for Cell Localization  [[Paper link]](https://www.techrxiv.org/articles/preprint/Multi-scale_Hypergraph-based_Feature_Alignment_Network_for_Cell_Localization/22680877)
+
+The code of papers: 
+
+Exponential distance transform maps for cell localization [[Paper link]](https://www.techrxiv.org/articles/preprint/Multi-scale_Hypergraph-based_Feature_Alignment_Network_for_Cell_Localization/22680877)
+
+and 
+
+Multi-scale Hypergraph-based Feature Alignment Network for Cell Localization  [[Paper link]](https://www.techrxiv.org/articles/preprint/Multi-scale_Hypergraph-based_Feature_Alignment_Network_for_Cell_Localization/22680877)
 
 
 
