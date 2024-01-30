@@ -14,21 +14,7 @@ This repository includes three papers about cell:
 Compared with density map
 ![avatar](./image/fidtmap.png)
 
-Visualizations for bounding boxes
-![avatar](./image/bounding_boxes.jpeg)
 
-# Progress
-- [x] Testing Code (2021.3.16)
-- [x] Training baseline code (2021.4.29)
-- [x] Pretrained model
-  - [x] ShanghaiA  (2021.3.16)
-  - [x] ShanghaiB  (2021.3.16)
-  - [x] UCF_QNRF (2021.4.29)
-  - [x] JHU-Crowd++ (2021.4.29)
-  - [x] NWPU-Crowd++ (2021.4.29)
-- [x] Bounding boxes visualizations(2021.3.24)
-- [x] Video demo(2021.3.29)
-- [x] Predicted coordinates txt file(2021.8.20)
 # Environment
 
 	python >=3.6 
@@ -40,25 +26,21 @@ Visualizations for bounding boxes
 	imageio >=1.18
 	nni >=2.0 (python3 -m pip install --upgrade nni)
 
+
 # Datasets
 
-- Download ShanghaiTech dataset from [Baidu-Disk](https://pan.baidu.com/s/15WJ-Mm_B_2lY90uBZbsLwA), passward:cjnx; or [Google-Drive](https://drive.google.com/file/d/1CkYppr_IqR1s6wi53l2gKoGqm7LkJ-Lc/view?usp=sharing)
-- Download UCF-QNRF dataset from [here](https://www.crcv.ucf.edu/data/ucf-qnrf/)
-- Download JHU-CROWD ++ dataset from [here](http://www.crowd-counting.com/)
-- Download NWPU-CROWD dataset from [Baidu-Disk](https://pan.baidu.com/s/1VhFlS5row-ATReskMn5xTw), passward:3awa; or [Google-Drive](https://drive.google.com/file/d/1drjYZW7hp6bQI39u7ffPYwt4Kno9cLu8/view?usp=sharing)
+- Download all dataset from [Google-Drive](https://drive.google.com/drive/folders/1jlt9UtApF1GM28PjVwA933kfgbNSZD01?usp=drive_link)
 
-# Generate FIDT Ground-Truth
+
+# Generate EDT Ground-Truth
 
 ```
 cd data
-run  python fidt_generate_xx.py
+python CoNIC_process.py
 ```
+Generate all datasets by this way.
 
-“xx” means the dataset name, including sh, jhu, qnrf, and nwpu. You should change the dataset path.
 
-# Model
-
-Download the pretrained model from [Baidu-Disk](https://pan.baidu.com/s/1SaPppYrkqdWeHueNlcvUJw), passward:gqqm, or [OneDrive](https://1drv.ms/u/s!Ak_WZsh5Fl0lhCneubkIv1mTllAZ?e=0zMHSM)
 
 # Quickly test
 
@@ -76,9 +58,7 @@ Generate image file list: python make_npydata.py
 
 ```
 python test.py --dataset ShanghaiA --pre ./model/ShanghaiA/model_best.pth --gpu_id 0
-python test.py --dataset ShanghaiB --pre ./model/ShanghaiB/model_best.pth --gpu_id 1  
-python test.py --dataset UCF_QNRF --pre ./model/UCF_QNRF/model_best.pth --gpu_id 2  
-python test.py --dataset JHU --pre ./model/JHU/model_best.pth --gpu_id 3  
+
 ```
 **If you want to generate bounding boxes,**
 
@@ -86,40 +66,7 @@ python test.py --dataset JHU --pre ./model/JHU/model_best.pth --gpu_id 3
 python test.py --test_dataset ShanghaiA --pre model_best.pth  --visual True
 (remember to change the dataset path in test.py)  
 ```
-**If you want to test a video,**
 
-```
-python video_demo.py --pre model_best.pth  --video_path demo.mp4
-(the output video will in ./demo.avi; By default, the video size is reduced by two times for inference. You can change the input size in the video_demo.py)
-```
-![avatar](./image/demo.jpeg)
-Visiting [bilibili](https://www.bilibili.com/video/BV17v41187fs?from=search&seid=12553003238808495181) or [Youtube](https://youtu.be/YdH6YpHywM4) to watch the video demonstration. The original demo video can be downloaded from [Baidu-Disk](https://pan.baidu.com/s/1-PD2no_1VPBV-tEa7uLObA), passed: cebh
-
-More config information is provided in config.py
-# Evaluation localization performance
-| Shanghai Teach Part A | Precision | Recall | F1-measure |
-| :-------------------- | :-------- | :----- | ---------- |
-| σ=4                   | 59.1%     | 58.2%  | 58.6%      |
-| σ=8                   | 78.1%     | 77.0%  | 77.6%      |
-
-| Shanghai Teach Part B | Precision | Recall | F1-measure |
-| :-------------------- | :-------- | :----- | ---------- |
-| σ=4                   | 64.9%     | 64.5%  | 64.7%      |
-| σ=8                   | 83.9%     | 83.2%  | 83.5%      |
-
-| JHU_Crowd++ <br />(test set) | Precision | Recall | F1-measure |
-| :-------------------: | :-------: | :----: | :--------: |
-| σ=4                   | 38.9% | 38.7% | 38.8% |
-| σ=8                   | 62.5% | 62.4% | 62.4% |
-
-| UCF_QNRF | Av.Precision | Av.Recall | Av. F1-measure |
-| :-------------------- | :-------- | :----- | ---------- |
-| σ=1....100                   | 84.49% | 80.10% | 82.23% |
-
-| NWPU-Crowd (val set) | Precision | Recall | F1-measure |
-| :-------------------- | :-------- | :----- | ---------- |
-| σ=σ_l               | 82.2% | 75.9% | 78.9% |
-| σ=σ_s | 76.7% | 70.9% | 73.7% |
 
 
 **Evaluation example:**  
@@ -182,12 +129,23 @@ We have not studied the effect of some hyper-parameter. Thus, the results can be
 # Reference
 If you find this project is useful for your research, please cite:
 ```
-@article{liang2021focal,
-  title={Focal Inverse Distance Transform Maps for Crowd Localization and Counting in Dense Crowd},
+@article{liang2022focal,
+  title={Focal inverse distance transform maps for crowd localization},
   author={Liang, Dingkang and Xu, Wei and Zhu, Yingying and Zhou, Yu},
-  journal={arXiv preprint arXiv:2102.07925},
-  year={2021}
+  journal={IEEE Transactions on Multimedia},
+  year={2022},
+  publisher={IEEE}
 }
+
+@article{li2024multi,
+  title={Multi-scale hypergraph-based feature alignment network for cell localization},
+  author={Li, Bo and Yong, Zhang and Zhang, Chengyang and Piao, Xinglin and Hu, Yongli and Yin, Baocai},
+  journal={Pattern Recognition},
+  pages={110260},
+  year={2024},
+  publisher={Elsevier}
+}
+
 ```
 
 
