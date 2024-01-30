@@ -13,7 +13,6 @@ This repository includes three papers about cell:
 # Visualizations
 ![avatar](./image/Vis0.png)
 
-![avatar](./image/Vis1.png)
 
 
 # Environment
@@ -26,6 +25,7 @@ This repository includes three papers about cell:
 	pillow >=7.0.0
 	imageio >=1.18
 	nni >=2.0 (python3 -m pip install --upgrade nni)
+ 	and so on
 
 
 # Datasets
