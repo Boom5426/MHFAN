@@ -8,7 +8,7 @@ This repository includes three papers about cell:
 
 
 ## Overview
-![avatar](./image/overview.png)
+![avatar](./fig1.png)
 
 # Visualizations
 Compared with density map
