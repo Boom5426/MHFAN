@@ -35,10 +35,12 @@ The data process refers to this paper:
 ```
 
 ```
-@article{li2023multi,
-  title={Multi-scale Hypergraph-based Feature Alignment Network for Cell Localization},
-  author={Li, Bo},
-  year={2023},
-  publisher={TechRxiv}
+@article{li2024multi,
+  title={Multi-scale hypergraph-based feature alignment network for cell localization},
+  author={Li, Bo and Yong, Zhang and Zhang, Chengyang and Piao, Xinglin and Hu, Yongli and Yin, Baocai},
+  journal={Pattern Recognition},
+  pages={110260},
+  year={2024},
+  publisher={Elsevier}
 }
 ```
