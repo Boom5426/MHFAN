@@ -14,12 +14,11 @@ This repository includes three papers about cell:
 ![avatar](./image/Vis0.png)
 
 # Datasets
-
 - Download all dataset from [Google-Drive](https://drive.google.com/drive/folders/1jlt9UtApF1GM28PjVwA933kfgbNSZD01?usp=drive_link)
 ![avatar](./image/cell_dataset.png)
 
 
-## Installation
+# Installation
 
 Download MHFAN:
 ```
@@ -42,33 +41,28 @@ git clone https://github.com/Boli-trainee/MHFAN
 ```
 cd data
 python CoNIC_process.py
+# Generate all datasets by this way
 ```
-Generate all datasets by this way.
+
 
 ```
 Generate image file list: python make_npydata.py
 ```
 
-# Training
-
+# Training and Testing
 ```
 python train.py --dataset BCData
+python test.py
 ```
 
-## Thanks
+
+# Thanks
 This code is based on FIDTM (https://github.com/dk-liang/FIDTM). Many thanks for your code implementation.
 
 
 # Reference
 If you find this project is useful for your research, please cite:
 ```
-@article{liang2022focal,
-  title={Focal inverse distance transform maps for crowd localization},
-  author={Liang, Dingkang and Xu, Wei and Zhu, Yingying and Zhou, Yu},
-  journal={IEEE Transactions on Multimedia},
-  year={2022},
-  publisher={IEEE}
-}
 
 @article{li2024multi,
   title={Multi-scale hypergraph-based feature alignment network for cell localization},
@@ -78,6 +72,35 @@ If you find this project is useful for your research, please cite:
   year={2024},
   publisher={Elsevier}
 }
+
+@article{li2024exponential,
+  title={Exponential distance transform maps for cell localization},
+  author={Li, Bo and Chen, Jie and Yi, Hang and Feng, Min and Yang, Yongquan and Zhu, Qikui and Bu, Hong},
+  journal={Engineering Applications of Artificial Intelligence},
+  volume={132},
+  pages={107948},
+  year={2024},
+  publisher={Elsevier}
+}
+
+@article{li2024lite,
+  title={Lite-UNet: A lightweight and efficient network for cell localization},
+  author={Li, Bo and Zhang, Yong and Ren, Yunhan and Zhang, Chengyang and Yin, Baocai},
+  journal={Engineering Applications of Artificial Intelligence},
+  volume={129},
+  pages={107634},
+  year={2024},
+  publisher={Elsevier}
+}
+
+@article{liang2022focal,
+  title={Focal inverse distance transform maps for crowd localization},
+  author={Liang, Dingkang and Xu, Wei and Zhu, Yingying and Zhou, Yu},
+  journal={IEEE Transactions on Multimedia},
+  year={2022},
+  publisher={IEEE}
+}
+
 
 ```
 
