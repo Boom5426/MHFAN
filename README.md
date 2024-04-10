@@ -7,7 +7,7 @@ This repository includes three papers about cell:
 3) Lite-UNet: A lightweight and efficient network for cell localization. [Paper](https://www.sciencedirect.com/science/article/pii/S0952197623018183#fig2)
 
 
-## Overview
+# Overview
 ![avatar](./image/Overview.png)
 
 # Visualizations
