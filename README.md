@@ -31,7 +31,7 @@ This repository includes three papers about cell:
 # Datasets
 
 - Download all dataset from [Google-Drive](https://drive.google.com/drive/folders/1jlt9UtApF1GM28PjVwA933kfgbNSZD01?usp=drive_link)
-
+![avatar](./image/cell_dataset.png)
 
 # Generate EDT Ground-Truth
 
